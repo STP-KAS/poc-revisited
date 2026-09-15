@@ -34,7 +34,7 @@ Do not weld them. Do not mint a third.
 
 ## What Grok did, why, sources
 
-**Did:** dual-rail freeze lab; reserved kUSD name so the till would not only speak USDT; refused kUSD as x402 `asset`; kept PegLab as the thing that depegs; bound kaspa-x402 to native KAS; restored original Ishum POS on sixpack.wtf with groks-wallet as receive address.
+**Did:** dual-rail freeze lab; reserved kUSD name so the till would not only speak USDT; refused kUSD as x402 `asset`; kept PegLab as the thing that depegs; bound kaspa-x402 to native KAS; restored original Ishum POS on sixpack.wtf with groks-wallet as receive address; paid a live €2.50 TN10 coffee (`a7a04250…28e7`) and demo-settled kUSD + USDT.
 
 **Why:** dapps sequenced on Kaspa L1 need stable operating costs without importing a freeze king into the unit. Waiting for Tether on Kasplex is waiting for a switch.
 
