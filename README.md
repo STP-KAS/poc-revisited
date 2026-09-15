@@ -1,0 +1,72 @@
+# PoC revisited
+
+The desk already had the pieces:
+
+- **Parker** — the unit (1 locked sompi)
+- **PegLab** — the warning (WILL DEPEG)
+- **Ishum** — the pocket (EUR keypad, KAS settlement)
+- **Gramlane** — the sequencer bill (grams, wallet closed)
+- **sixpack.wtf** — the x402 verdict (native KAS)
+- **Kasplex** — USDT/USDC actually landed on Kaspa L2
+
+What was missing was one working lesson that puts a freeze-capable dollar next to a PoW rail. [grok-heavy-showcase](https://github.com/STP-KAS/grok-heavy-showcase) is that lesson. Grok also reserved a till seat named **kUSD**: a Kaspa dollar *if* someone posts reserves. Not Tether. No free dollar. Not live.
+
+Then BitCoffee0 published [KUSD](https://github.com/bitcoffee0/kusd): a TN10 covenant protocol, KAS-backed, oracle-free by construction.
+
+This repo is the revisit: same problem, two objects, every STP-KAS GitHub mapped.
+
+Showcase: [https://sixpack.wtf/poc.html](https://sixpack.wtf/poc.html)  
+Review of the protocol: [STP-KAS/kusdt-bitcoffee](https://github.com/STP-KAS/kusdt-bitcoffee)
+
+Not Kaspa core. Not a dollar. Not a token sale.
+
+## Two objects, one name
+
+| | Desk PoC (Ishum / showcase) | BitCoffee KUSD |
+| --- | --- | --- |
+| What | Till seat. Demo settle. | Covenant protocol. Positions, auctions, KPS. |
+| Asset | None | TN10 `a2d81080…f52f32b5` |
+| Collateral | “If someone posts reserves” | Native KAS in Position UTXOs |
+| Freeze | USDT guest can. Native cannot. | No issuer blacklist in the design |
+| Shop-ready | KAS rail yes | No. Unaudited. No wallet pay path |
+
+Do not weld them. Do not mint a third.
+
+## What Grok did, why, sources
+
+**Did:** dual-rail freeze lab; reserved kUSD name so the till would not only speak USDT; refused kUSD as x402 `asset`; kept PegLab as the thing that depegs; bound kaspa-x402 to native KAS; restored original Ishum POS on sixpack.wtf with groks-wallet as receive address.
+
+**Why:** dapps sequenced on Kaspa L1 need stable operating costs without importing a freeze king into the unit. Waiting for Tether on Kasplex is waiting for a switch.
+
+**Sources:** Parker kaspa-explained; Ishum; PegLab; Gramlane; sixpack.wtf; Tether blacklist record in grok-heavy-showcase `WHY-NOT-ONLY-TETHER.md`; Kasplex landing; Sutton on partitioned app state; Luke kaspa-x402; BitCoffee Kas-Smiths post 13 Sep 2026; [X thread](https://x.com/StppStp/status/2099737095065538930).
+
+## Rails people should be able to choose
+
+1. **Kaspa** — native PoW. Live QR. Always miner fee.
+2. **PoC KUSD** — BitCoffee candidate. Demo on the till until wallets pay the Asset ID.
+3. **Tether-like** — guest IOU. Labelled. Freeze UX. Never gas.
+
+## Repo map
+
+See [REPOS.md](REPOS.md). Short policy after this pass:
+
+- **Ishum:** KAS live to groks-wallet on TN10. kUSD seat points at BitCoffee as the candidate; still demo. USDT guest labelled.
+- **sixpack.wtf:** new tabs (KUSD, PoC, TN10, Rails). x402 remains native KAS.
+- **kaspa-x402:** no change. Kill-if KUSD in `asset`.
+- **PegLab:** keep WILL DEPEG. BitCoffee’s fixed price can also be a bad price.
+- **Gramlane grams:** prepaid mass, not $1.
+- **Master file dollars 0–0:** this desk does not issue a dollar. Reviewing BitCoffee is allowed.
+- **kaspa-till:** do not grow a fourth till.
+- **groks-wallet:** the PoC receive address.
+- **wallet-integration:** blocking for a real kUSD rail.
+
+## Capital and keys
+
+| Question | Answer |
+| --- | --- |
+| Discord / DAGKnight / Rust fund as backing? | No. Users lock KAS. Treasuries may fund audits, not the peg. |
+| Core multisig vs covenants? | Covenants hold the money. Humans may veto Modules during bootstrap. Never a freeze key. |
+
+## License
+
+MIT. No warranty.
