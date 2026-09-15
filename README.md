@@ -7,7 +7,6 @@ The desk already had the pieces:
 - **Ishum** — the pocket (EUR keypad, KAS settlement)
 - **Gramlane** — the sequencer bill (grams, wallet closed)
 - **sixpack.wtf** — the x402 verdict (native KAS)
-- **Kasplex** — USDT/USDC actually landed on Kaspa L2
 
 What was missing was one working lesson that puts a freeze-capable dollar next to a PoW rail. [grok-heavy-showcase](https://github.com/STP-KAS/grok-heavy-showcase) is that lesson. Grok also reserved a till seat named **kUSD**: a Kaspa dollar *if* someone posts reserves. Not Tether. No free dollar. Not live.
 
@@ -36,9 +35,11 @@ Do not weld them. Do not mint a third.
 
 **Did:** dual-rail freeze lab; reserved kUSD name so the till would not only speak USDT; refused kUSD as x402 `asset`; kept PegLab as the thing that depegs; bound kaspa-x402 to native KAS; restored original Ishum POS on sixpack.wtf with groks-wallet as receive address; paid a live €2.50 TN10 coffee (`a7a04250…28e7`) and demo-settled kUSD + USDT.
 
-**Why:** dapps sequenced on Kaspa L1 need stable operating costs without importing a freeze king into the unit. Waiting for Tether on Kasplex is waiting for a switch.
+**Why:** dapps sequenced on Kaspa need stable operating costs without importing a freeze king into the unit. Waiting for Tether is waiting for a switch.
 
-**Sources:** Parker kaspa-explained; Ishum; PegLab; Gramlane; sixpack.wtf; Tether blacklist record in grok-heavy-showcase `WHY-NOT-ONLY-TETHER.md`; Kasplex landing; Sutton on partitioned app state; Luke kaspa-x402; BitCoffee Kas-Smiths post 13 Sep 2026; [X thread](https://x.com/StppStp/status/2099737095065538930).
+**Sources:** Parker kaspa-explained; Ishum; PegLab; Gramlane; sixpack.wtf; Tether blacklist record in grok-heavy-showcase `WHY-NOT-ONLY-TETHER.md`; Sutton on partitioned app state; Luke kaspa-x402; BitCoffee Kas-Smiths post 13 Sep 2026; [X thread](https://x.com/StppStp/status/2099737095065538930).
+
+Kasplex landing USDT/USDC is useful. It imports issuer policy into the money the dapp speaks. If the dapp unit can be frozen, the dapp can be frozen. Proof-of-work cash has held the no-blacklist test since 2009. Kaspa keeps that on native KAS. A KAS-backed covenant dollar is the attempt to keep it while quoting a dollar. BitCoffee is that attempt. It is not done.
 
 ## Rails people should be able to choose
 
