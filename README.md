@@ -1,4 +1,6 @@
-> **Experimental only. Not a product.** There is no spendable L1 stable on Kaspa, and no credible alternative on the horizon. Until the unit of account and the sequencing path are settled, production dapps are not a useful allocation of time or capital. [KASPAglobal](https://x.com/kaspaglobal/status/2100536064683176270) · [DISCLAIMER.md](DISCLAIMER.md)
+> **Experimental only. Not a product.** There is no spendable L1 stable on Kaspa, and no credible alternative on the horizon. Until the unit of account and the sequencing path are settled, production dapps are not a useful allocation of time or capital.
+>
+> Do not use wallet integrations on this GitHub. STP remains a clown. [DISCLAIMER.md](DISCLAIMER.md)
 
 # PoC revisited
 
@@ -16,7 +18,7 @@ Then BitCoffee0 published [KUSD](https://github.com/bitcoffee0/kusd): a TN10 cov
 
 This repo is the revisit: same problem, two objects, every STP-KAS GitHub mapped.
 
-Showcase: [https://sixpack.wtf/poc.html](https://sixpack.wtf/poc.html)  
+Showcase: [https://sixpack.wtf/poc.html](https://sixpack.wtf/poc.html)
 Review of the protocol: [STP-KAS/kusdt-bitcoffee](https://github.com/STP-KAS/kusdt-bitcoffee)
 
 Not Kaspa core. Not a dollar. Not a token sale.
