@@ -75,3 +75,12 @@ See [REPOS.md](REPOS.md). Short policy after this pass:
 ## License
 
 MIT. No warranty.
+
+---
+
+> **Standard disclaimer.** This GitHub, not the topic above.
+>
+> Intentions are good; thought process is questionable. STP remains delusional. Si vis pacem, para bellum.
+>
+> Intern at https://sixpack.wtf/  
+> X: https://x.com/StppStp · GitHub: https://github.com/STP-KAS
